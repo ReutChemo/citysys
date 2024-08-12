@@ -11,9 +11,6 @@ export const getStreets = async (cityName: string): Promise<string[]> => {
       .then((res) => {
         const { records } = res.data.result;
         
-        // .filter(value => value !== null && value !== undefined)  // Filter out null and undefined
-        // .map(value => value * 2); 
-        
         Streets.push(records.filter((city: any) =>city !== null && city !== undefined).map((city: any)=> city["שם_רחוב"].trim()));
         console.log('cityName'+cityName);
         console.log('Streets'+Streets);
