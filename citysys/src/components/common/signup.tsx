@@ -81,7 +81,7 @@ const Signup: React.FC = () => {
     console.log('cities');
     console.log(cities);
     
-    console.log(selectedCity);
+    //console.log(selectedCity);
    
     
     
